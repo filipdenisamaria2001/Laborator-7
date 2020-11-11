@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+body {
+		background-color: Violet;
+	 }
+h1 {
+		color: DodgerBlue;
+		font-size: 40px;
+}
+h2{
+		color: DodgerBlue;
+		font-size: 30px;
+}
+p{
+		color: SlateBlue;
+		text-align: left;
+		font-size: 20px;
+}
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+img {
+  border: 1px solid white;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, td, th {
+  border: 2px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th {
+  height: 70px;
+}
+td{
+	height: 30px;
+	}
+th {
+  background-color: #800080;
+  color: white;
+}
+td {
+	background-color: #C0C0C0;
+	color: black;
+}
+ol {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
+
+ol li {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ul li {
+  background: #cce5ff;
+  margin: 5px;
+}
+</style>
+<script>
+function myFunction() 
+{
+document.getElementById("nume_profil").innerHTML = "Dr.ing. FILIP DENISA-MARIA";
+document.getElementById("domeniu").innerHTML = "Vreau sa profesez in domeniul IT";
+}
+function myTable()
+{
+var tabelEducatie=document.getElementById("tabelEducatie")
+tabelEducatie.rows[1].cells[1].innerHTML="Universitatea tehnica OSUT";
+tabelEducatie.rows[1].cells[3].innerHTML="Lucrul in echipa";
+tabelEducatie.rows[2].cells[1].innerHTML="Liceul Teoretic";
+tabelEducatie.rows[2].cells[3].innerHTML="Vorbitul in public";
+tabelEducatie.rows[3].cells[1].innerHTML="Intership";
+tabelEducatie.rows[3].cells[2].innerHTML="Anul IV";
+tabelEducatie.rows[3].cells[3].innerHTML="Dezvoltare personala ";
+}
+document.getElementById("pozaProfil").src="Denisa.jpg";
+document.body.style.backgroundColor="Orange";
+var par=document.getElementByTagName("p");
+var i;
+for(i=0;i<par.lenght;i++)
+par[i].style.color="magenta";
+document.getElementById("pozaProfil").style.opacity=""0.9";
+document.getElementById("pozaProfil").style.border=""6px";
+</script>
+</head>
+
+<body>
+
+
+<img id="pozaProfil" src="Denisa.jpg" width="180" height="180">
+<button type="button" onclick="myFunction()">Alta Viata!</button>
+<h1 class="serif" id="nume_profil">Filip Denisa-Maria</h1>
+<p class="serif">denisafilip2001@yahoo.com</p>
+<p class="serif" id="domeniu">„Arta de a forma bunele deprinderi sau de a dezvolta aptitudinile native pentru virtute ale acelora care dispun de ele.”</p>
+
+<table style="width:100%" onclick="myTable" id="tabelEducatie">
+  <tr>
+    <th>Disciplina</th>
+    <th>Perioada de studiu</th>
+  </tr>
+   <tr>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/05.pdf">Componente si Circuite Electronice Pasive</a></td>
+    <td>Anul I</td>
+  </tr>
+   <tr>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/01.pdf" >Analiza Matematica</a></td>
+    <td id=>Anul I</td>
+  </tr>
+   <tr>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/04.pdf" >Programarea Calculatoarelor</a></td>
+    <td>Anul I</td>
+  </tr>
+ </table>
+ 
+ <h2>Pasiuni/Hobby-uri:</h2>
+ <ul>
+  <li>Volei</li>
+  <li>Gatit</li>
+  <li>Filme si seriale</li>
+</ul>
+</body>
+</html>

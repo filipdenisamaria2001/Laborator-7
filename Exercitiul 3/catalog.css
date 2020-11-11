@@ -1,0 +1,19 @@
+body {
+  background-color: #FFFF00;
+}
+h1{
+  color: #00FFFF;
+  margin-left: 20px;
+}
+h2{
+	color: black
+}
+img {
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
